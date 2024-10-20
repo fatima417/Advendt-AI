@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tjenesteforvaltning</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Administrer Tjenester</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Exploring my journey in Information Systems</p>
+    </header>
 
-        <h2>Book et Møte</h2>
-        <form id="booking-form">
-            <label for="date">Dato:</label>
-            <input type="date" id="date" required>
+    <section>
+      <h2>Interactive Map</h2>
+      <div id="map"></div>
+    </section>
 
-            <label for="time">Tid:</label>
-            <input type="time" id="time" required>
+    <section>
+      <h2>My Skills</h2>
+      <img src="A_clean,_minimalist_infographic_that_highlights_ke.png" alt="Infographic of my skills" />
+    </section>
 
-            <label for="description">Beskrivelse:</label>
-            <textarea id="description" required></textarea>
-            <button type="submit">Book Møte</button>
-        </form>
+    <footer>
+      <p>&copy; 2024 by [Your Name]</p>
+    </footer>
 
-        <h2>Lagre Dokument</h2>
-        <form id="upload-form">
-            <label for="file">Velg fil:</label>
-            <input type="file" id="file" required>
-            <button type="submit">Last opp</button>
-        </form>
+    <script>
+      // Initialize Google Maps
+      function initMap() {
+        var myLatLng = { lat: 59.9139, lng: 10.7522 }; // Example: Oslo, Norway
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 5,
+          center: myLatLng,
+        });
 
-        <h2>Bookinger</h2>
-        <ul id="booking-list"></ul>
-
-        <h2>Lastede Dokumenter</h2>
-        <ul id="document-list"></ul>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+        new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "Oslo, Norway",
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  </body>
 </html>
-

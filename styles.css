@@ -1,73 +1,62 @@
+/* Basic styling for the body and text */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-body {
-    background-image: url('meeting.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; /* Hindrer repetisjon av bildet */
-    background-position: center; /* Sentrerer bildet */
-}
-
-
-h1, h2 {
-    color: #333;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input[type="date"],
-input[type="time"],
-input[type="file"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-ul {
-    list-style: none;
     padding: 0;
-}
-
-li {
-    background: #f9f9f9;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section titles */
+  h2 {
+    color: #007bff;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Interactive map styling */
+  #map {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Infographic section */
+  section img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 4px;
-}
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive styling for mobile */
+  @media (max-width: 768px) {
+    #map {
+      height: 300px;
+      width: 90%;
+    }
+  
+    header {
+      font-size: 18px;
+    }
+  }
+  
