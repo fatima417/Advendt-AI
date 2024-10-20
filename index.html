@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <style>
+        /* CSS to set the height of the map */
+        #map {
+            height: 400px; /* Adjust height as needed */
+            width: 100%;   /* Full width */
+        }
+    </style>
+</head>
+<body>
     <header>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Exploring my journey in Information Systems</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Exploring my journey in Information Systems</p>
     </header>
 
     <section>
-      <h2>Interactive Map</h2>
-      <div id="map"></div>
+        <h2>Interactive Map</h2>
+        <!-- Embed Google Maps using an iframe -->
+        <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509173!2d10.7522!3d59.9139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463b6c5ccdd6d0ed%3A0x6c3a8497c5f0d5e1!2sOslo%2C%20Norway!5e0!3m2!1sen!2s!4v1696375977470!5m2!1sen!2s"
+            allowfullscreen
+            loading="lazy"
+        ></iframe>
     </section>
 
     <section>
-      <h2>My Skills</h2>
-      <img src="/img/desigpic.webp" alt="Infographic of my skills" />
+        <h2>My Skills</h2>
+        <img src="/img/desigpic.webp" alt="Infographic of my skills" />
     </section>
 
     <footer>
-      <p>&copy; 2024 by [Your Name]</p>
+        <p>&copy; 2024 by [Fatima]</p>
     </footer>
-
-    <script>
-      // Initialize Google Maps
-      function initMap() {
-        var myLatLng = { lat: 59.9139, lng: 10.7522 }; // Example: Oslo, Norway
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 5,
-          center: myLatLng,
-        });
-
-        new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: "Oslo, Norway",
-        });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
-  </body>
+</body>
 </html>
