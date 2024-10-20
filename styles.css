@@ -14,6 +14,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+body {
+    background-image: url('meeting.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Hindrer repetisjon av bildet */
+    background-position: center; /* Sentrerer bildet */
+}
+
+
 h1, h2 {
     color: #333;
 }
