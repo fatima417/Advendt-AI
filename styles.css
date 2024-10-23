@@ -48,6 +48,20 @@ body {
     width: 100%;
   }
   
+  /* Center the section content */
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Center the image and make it responsive */
+.centered-image {
+  max-width: 100%;
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 0 auto; /* Horizontally center */
+}
+
   /* Responsive styling for mobile */
   @media (max-width: 768px) {
     #map {
