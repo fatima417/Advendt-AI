@@ -1,54 +1,51 @@
 /* Basic styling for the body and text */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Section titles */
-  h2 {
-    color: #007bff;
-    text-align: center;
-    padding-top: 20px;
-  }
-  
-  /* Interactive map styling */
-  #map {
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Infographic section */
-  section img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Center the section content */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: beige;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section titles */
+h2 {
+  color: #007bff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Interactive map styling */
+#map {
+  height: 400px;
+  width: 80%;
+  margin: 20px auto; /* Center the map with some margin */
+}
+
+/* Infographic section */
+section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Center the section content */
 section {
   text-align: center;
   padding: 20px;
@@ -62,15 +59,43 @@ section {
   margin: 0 auto; /* Horizontally center */
 }
 
-  /* Responsive styling for mobile */
-  @media (max-width: 768px) {
-    #map {
+/* Lists styling */
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+li {
+  margin: 10px 0; /* Space between list items */
+}
+
+/* Link styling */
+a {
+  color: #007bff;
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  #map {
       height: 300px;
       width: 90%;
-    }
-  
-    header {
-      font-size: 18px;
-    }
   }
-  
+
+  header {
+      font-size: 18px;
+  }
+
+  section {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+      font-size: 1.5em; /* Adjust section title size */
+  }
+}

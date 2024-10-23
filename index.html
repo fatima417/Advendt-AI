@@ -8,13 +8,35 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
         #map {
-            height: 400px; /* Juster høyden etter behov */
-            width: 100%;   /* Full bredde */
+            height: 400px; /* Adjust height as needed */
+            width: 100%;   /* Full width */
         }
         .centered-image {
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        header, footer {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #343a40;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -23,20 +45,62 @@
         <h1>Welcome to My Portfolio</h1>
         <p>Exploring my journey in Information Systems</p>
     </header>
+
     <section>
-        <h2>Interactive map for school</h2>
+        <h2>About Me</h2>
+        <p>My name is Fatima, and I am a passionate student in Information Systems. I enjoy working on various projects that challenge my skills and help me grow. My interests include web development, data analysis, and user experience design.</p>
+    </section>
+
+    <section>
+        <h2>Interactive Map for School</h2>
         <iframe
             id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765497558!2d11.350223012352382!3d59.12925022691415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2s%C3%98stfold%20University%20College!5e0!3m2!1sen!2sno!4v1729719464298!5m2!1sen!2sno"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
+
     <section>
         <h2>My Skills</h2>
         <img class="centered-image" src="dale.png" alt="Infographic of my skills">
-    </section>    
+        <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Data Analysis (Python, Excel)</li>
+            <li>User Experience Design</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Project Gallery</h2>
+        <p>Here are some projects I've worked on:</p>
+        <ul>
+            <li><a href="#">Project 1: Web Application for XYZ</a> - A brief description of this project.</li>
+            <li><a href="#">Project 2: Data Analysis on ABC</a> - A brief description of this project.</li>
+            <li><a href="#">Project 3: User Experience Design for DEF</a> - A brief description of this project.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Blog</h2>
+        <p>Check out my latest blog posts:</p>
+        <ul>
+            <li><a href="#">Understanding Information Systems</a> - A deep dive into the field.</li>
+            <li><a href="#">Top 5 Web Development Tools</a> - Tools that every developer should know.</li>
+            <li><a href="#">How to Analyze Data Effectively</a> - Tips and tricks for data analysis.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out:</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn Profile</a></li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2024 by [Fatima]</p>
+        <p>&copy; 2024 by Fatima</p>
     </footer>
 </body>
 </html>
